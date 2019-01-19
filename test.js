@@ -1,10 +1,10 @@
 
 
 
-function add() {
+/*function add() {
     
     var myAge =document.getElementById("v1").value;
-    
+  */  
 
 if (myAge < 18 || myAge > 30 ){
     
