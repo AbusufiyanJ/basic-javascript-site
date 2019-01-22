@@ -1,10 +1,8 @@
-var a = "apple";
-var b = 5;
+var monkey = 'Nan\'kal\'oru abu "muttal" koranku';
 
-if (!isNaN(a)){
+if(monkey.indexOf("abu") === -1){
+    console.log("the Word abu is not in the string")
     
-    console.log("please enter a number");
-} else {
-    
-    console.log("meaning of life " + (a*b));
+}else {
+    console .log("the word abu starts at the position:" + monkey.indexOf("abu"));
 }
