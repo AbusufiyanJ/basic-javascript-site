@@ -1,5 +1,19 @@
- var myPastDate = new Date( 2019 , 0 , 9, 10, 30, 15);
-var myfutureDate = new Date(2545 , 11 , 9, 10 ,30,15);
+var content =document.getElementById("content");
+var button =document.getElementById("content-button");
 
-     console.log(myPastDate);
-    console.log(myfutureDate.getFullYear());
+button.onclick = function(){
+    if(content.className== "open2"){
+        content.className = "open3";
+        button.innerHTML = "show less";
+
+    } else if(content.className == "open3") {
+        content.className = "open1";
+        button.innerHTML = "show more";
+
+    }
+    else{
+        content.className = "open2";
+        button.innerHTML = "show more "
+    }
+
+};

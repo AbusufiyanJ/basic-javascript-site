@@ -1,8 +1,60 @@
+body{
+    background-color:whitesmoke ;
+}
+
+#title-nav-li{
+ display:inline-block;
+ line-break: normal;
+ box-lines: initial;
+}
+
 #content{
     
-    border-left: solid;
-    width: 30%;
+    
+    margin-left: 35%;
+    
+    width: 40%;
+    background-color:beige;
     overflow: hidden;
-    margin: -10px;
-    background-image: url(img/IMG_8465.JPG);
+
+
+max-height: 130px;
+transition: max-height 0.7s;
+
 }
+
+#content-para{
+    align-content: center;
+    text-align: center;
+    
+}
+
+#content-button{
+    margin: 20px;
+    margin-left: 50%;
+    padding: 15px;
+    background-color: blue;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-fill-color: aqua;
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+#content-button:hover{
+    background-color: blueviolet;
+    text-transform: uppercase;
+}
+
+#content.open1{
+    max-height: 130px;
+}
+
+#content.open2{
+    max-height:250px;
+}
+
+#content.open3{
+    max-height: 400px;
+    }
+
+ 
