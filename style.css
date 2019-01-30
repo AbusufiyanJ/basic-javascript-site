@@ -1,49 +1,25 @@
 body{
-    background-color:whitesmoke ;
-}
-
-#title-nav-li{
- display:inline-block;
- line-break: normal;
- box-lines: initial;
+    background-color:#eee;
+    grid-template-rows: 3;
 }
 
 #content{
-    
-    
     margin-left: 35%;
-    
-    width: 40%;
+    max-width: 700px;
     background-color:beige;
     overflow: hidden;
-
-
-max-height: 130px;
-transition: max-height 0.7s;
-
-}
-
-#content-para{
-    align-content: center;
+    max-height: 13%;
+    font-size: 3em;
+    opacity: 0;
     text-align: center;
+
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    transition: opacity 0.7s;
     
 }
-
-#content-button{
-    margin: 20px;
-    margin-left: 50%;
-    padding: 15px;
-    background-color: blue;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    -webkit-text-fill-color: aqua;
-    text-transform: uppercase;
-    border-radius: 40px;
-}
-#content-button:hover{
-    background-color: blueviolet;
-    text-transform: uppercase;
-}
+#content.show{
+    opacity: 5;
 
 #content.open1{
     max-height:250px;
