@@ -1,26 +1,22 @@
-  var content =document.getElementById("content");
+  var colourchanger = document.getElementById("color-changer");
 
-button.onclick = function(){
-    if(content.className  == "")  {
-        content.className = "open1";
-        button.innerHTML = "show more if";
+  var colours = ["red","blue","green","pink"];
+  var counter= 0;
 
-    }else if(content.className == "open1") {
-        content.className = "open3";
-        button.innerHTML = "show less else if";
-    }
-    else if(content.className == "open3") {
-        content.className = "open2";
-        button.innerHTML = "show less else if 2";
-    }
-    else {
-        content.className = "";
-        button.innerHTML = "show more else";
+    function changecolour(){
+
+        if (counter >= colours.length){
+            counter=0;
+        }
+        colourchanger.style.background = colours[counter];
+        counter ++;
+
     }
 
-    var mytimer= setInterval(cc, 3000);
+    var myTimer = setInterval(changecolour, 1000);
 
-    cc.onclick =function(){
-        clearInterval(mytimer);
-        colorchanger.innerHTML = "timerstopped";
+    colourchanger.onmove = function(){
+
+        clearInterval(myTimer);
+        colourchanger.innerHTML="Timer stopped";
     };
