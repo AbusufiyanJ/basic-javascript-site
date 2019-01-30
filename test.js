@@ -1,5 +1,4 @@
-var content =document.getElementById("content");
-var button =document.getElementById("content-button");
+  var content =document.getElementById("content");
 
 button.onclick = function(){
     if(content.className  == "")  {
@@ -19,4 +18,9 @@ button.onclick = function(){
         button.innerHTML = "show more else";
     }
 
-};
+    var mytimer= setInterval(cc, 3000);
+
+    cc.onclick =function(){
+        clearInterval(mytimer);
+        colorchanger.innerHTML = "timerstopped";
+    };
