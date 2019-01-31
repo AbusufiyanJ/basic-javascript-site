@@ -13,10 +13,18 @@
 
     }
 
-    var myTimer = setInterval(changecolour, 1000);
+    var myTimer = setInterval(changecolour, 100);
 
-    colourchanger.onmove = function(){
+     colourchanger.onmouseover = function () {
 
         clearInterval(myTimer);
         colourchanger.innerHTML="Timer stopped";
-    };
+       
+        
+};
+
+colourchanger.onmouseleave =function(){
+
+    changecolour (myTimer, 1000);
+        colourchanger.innerHTML="color scroll started";
+};
