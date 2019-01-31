@@ -1,30 +1,14 @@
-  var colourchanger = document.getElementById("color-changer");
+var myforms= document.forms.myform;
+var message = document.getElementById("message");
 
-  var colours = ["red","blue","green","pink"];
-  var counter= 0;
-
-    function changecolour(){
-
-        if (counter >= colours.length){
-            counter=0;
-        }
-        colourchanger.style.background = colours[counter];
-        counter ++;
-
+myform.onsubmit = function()
+{
+    if(myform.name.value == ""){
+        message.innerHTML = "Please Enter a name";
+        return false;
+    } else {
+        message.innerHTML = "";
+        return true;
     }
 
-    var myTimer = setInterval(changecolour, 100);
-
-     colourchanger.onmouseover = function () {
-
-        clearInterval(myTimer);
-        colourchanger.innerHTML="Timer stopped";
-       
-        
-};
-
-colourchanger.onmouseleave =function(){
-
-    changecolour (myTimer, 1000);
-        colourchanger.innerHTML="color scroll started";
-};
+}

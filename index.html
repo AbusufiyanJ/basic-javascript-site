@@ -10,11 +10,26 @@
     
     </head>
 <body>
-  
-    <div id = "color-changer">
+  <form id ="my-form" name ="myform" action= "#">
 
-  </div>
+    <label for ="name">Name:</label>
+    <input type="text" name ="name"><br/>
+    <label>Hobbies:</label> 
+
+    <input type ="checkbox" name = "biking" value = "biking"> Biking
+    <input type="checkbox" name = "sking" value = "sking"> sking 
+    <input type="checkbox" name = "driving" value = "driving"> sking <br/>
+    <label for ="color">fav color:</label>
+    <select name="color">
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Green</option>
+    </select>
+    <input type="submit" name="submit" value ="submit">
+  </form>
+    
     </body> 
+    <div id="message" style="color:blue;"></div>
 
     <script src="test.js"></script>
 
